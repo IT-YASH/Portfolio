@@ -1,0 +1,19 @@
+<section class="articles-project">
+  <h2 class="article-project-heading">Latest Projects</h2>
+  <ul class="articles-project-ul">
+    <% data.forEach(project => { %>
+
+    <li>
+      <a href="/project-post.ejs/<%= project._id %>">
+        <span><%= project.Project_title %></span>
+        <span class="project-list-date"><%= project.createdAt.toDateString() %></span>
+      </a>
+    </li>
+
+    <% }) %>
+  </ul>
+
+  <% if (nextpage !== null) { %>
+    <a href="/project-yash?page=<%= nextpage %>" class="Pagination">&lt; Older Post</a>
+    <% } %>
+</section>

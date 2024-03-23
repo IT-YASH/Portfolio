@@ -1,0 +1,21 @@
+<class class="admin-title">
+  <h2>Project</h2>
+  <a href="/add-Project" class="button">Add Project</a>
+</class>
+
+<ul class="admin-post">
+  <% data.forEach(project=> { %>
+  <li>
+    <a href="/project-post.ejs/<%=project._id%>"> > <%= project.Project_title %> </a>
+    <div class="admin-post-controls">
+      <a href="/edit-project/<%=project._id%>" class="btn">Edit</a>
+      <form
+        action="/delete-project/<%= project._id %>?_method=DELETE"
+        method="post"
+      >
+        <input type="submit" value="Delete" class="btn-delete btn" />
+      </form>
+    </div>
+  </li>
+  <% }) %>
+</ul>
