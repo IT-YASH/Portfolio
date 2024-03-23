@@ -1,1 +1,3 @@
-Portfolio
+#Merging Two Separate Portfolio Folders
+
+Combining two separate portfolio folders into one can be challenging, especially when facing issues like CSS overlapping. After completing the content for both folders, merging them into a single folder revealed CSS conflicts, leading to unexpected layout discrepancies and visual inconsistencies. To resolve this, it's essential to carefully analyze the CSS files from both folders, identifying conflicting styles and class names. Renaming classes, using more specific selectors, and consolidating redundant styles can help alleviate these conflicts. Thorough testing across various devices and screen sizes is crucial to ensure a seamless and visually appealing presentation of your portfolio. By addressing CSS overlapping issues systematically, you can successfully merge your portfolio folders while maintaining a cohesive design and user experience.
